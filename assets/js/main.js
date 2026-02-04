@@ -165,6 +165,32 @@
       }, false);
     });
 
+        /**
+     * Isotope filters (BUTTONS support)
+     */
+    isotopeItem.querySelectorAll('.filter-button-group button').forEach(function(button) {
+      button.addEventListener('click', function () {
+
+        // Retirer état actif
+        isotopeItem.querySelectorAll('.filter-button-group button')
+          .forEach(btn => btn.classList.remove('is-checked', 'btn-primary'));
+
+        // Activer bouton cliqué
+        this.classList.add('is-checked', 'btn-primary');
+        this.classList.remove('btn-outline-primary');
+
+        // Appliquer filtre
+        initIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+
+        // Re-init AOS si nécessaire
+        if (typeof aosInit === 'function') {
+          aosInit();
+        }
+      });
+    });
+
   });
 
   /**
@@ -223,6 +249,7 @@
       }
     })
   }
+  
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
