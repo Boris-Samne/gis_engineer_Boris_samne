@@ -253,4 +253,24 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+
+
+  // --- Auto age (based on DOB) ---
+  function setAutoAge() {
+    const el = document.getElementById('age-value');
+    if (!el) return;
+
+    // DOB: 1 May 2003
+    const dob = new Date(2003, 4, 1); // month is 0-based -> 4 = May
+    const now = new Date();
+
+    let age = now.getFullYear() - dob.getFullYear();
+    const m = now.getMonth() - dob.getMonth();
+    if (m < 0 || (m === 0 && now.getDate() < dob.getDate())) age--;
+
+    el.textContent = String(age);
+  }
+
+  window.addEventListener('load', setAutoAge);
+
 })();

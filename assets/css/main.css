@@ -1461,3 +1461,107 @@ section,
 .portfolio .list-unstyled li {
   color: #555;
 }
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+    filter: brightness(35%);
+    transition:
+        opacity 1.2s ease,
+        filter 0.8s ease;
+}
+
+.hero-photo.fade-out {
+    opacity: 0;
+}
+
+.hero-photo.fade-in {
+    opacity: 1;
+}
+
+/* Configuration de base de la section Hero pour le positionnement */
+#hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+/* Conteneur de la grille - Masqué par défaut sur mobile, actif sur grand écran */
+.hero-photo-grid {
+  display: none;
+}
+
+/* Media query pour les grands écrans d'ordinateur (Desktop) */
+@media (min-width: 1200px) {
+  .hero-photo-grid {
+    display: flex;
+    flex-direction: column; /* Alignement vertical */
+    justify-content: center;
+    gap: 20px; /* Espace entre les images */
+    position: absolute;
+    right: 50px; /* Distance par rapport au bord droit */
+    top: 50%;
+    transform: translateY(-50%); /* Centrage vertical parfait */
+    z-index: 3;
+    width: 200px; /* Largeur fixe pour le couloir d'images */
+  }
+
+  /* Conteneur individuel de chaque image pour éviter les débordements */
+  .grid-item {
+    overflow: visible; 
+    width: 100%;
+    height: 150px; /* Hauteur fixe ajustable selon tes préférences */
+    border-radius: 8px;
+  }
+
+  /* Style de l'image de base */
+  .hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Conserve le ratio de l'image */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    
+    /* Transition fluide pour le retour à la taille normale */
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* Effet au survol (Hover) : zoom et mise en avant */
+  .hero-photo:hover {
+    transform: scale(1.2); /* L'image s'agrandit de 20% */
+    border-color: var(--accent-color, #0563bb); /* Optionnel : change la couleur de bordure au survol */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Passe au-dessus des autres éléments */
+  }
+}
+
+.hero-list {
+  list-style-type: disc;
+  padding-left: 25px;
+  font-size: 1.2rem;
+}
+
+.hero-list li {
+  margin-bottom: 8px;
+}

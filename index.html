@@ -26,6 +26,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/hero-photo-grid.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -43,6 +45,7 @@
 
     <div class="profile-img">
       <img src="assets/img/hero-bg.png" alt="Boris SAMNE profile picture" class="img-fluid rounded-circle">
+      <!--img src="assets/img/my-profile-img7.jpeg" alt="Boris SAMNE profile picture" class="img-fluid rounded-circle"-->
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -52,11 +55,11 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="https://x.com/BorisSamne" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
+      <!--a href="https://x.com/BorisSamne" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
       <a href="https://www.facebook.com/boris.samne.5" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/boris_samne/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-      <a href="https://github.com/boris-samne" class="github" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.instagram.com/boris_samne/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a-->
       <a href="https://www.linkedin.com/in/borissamne/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/boris-samne" class="github" target="_blank"><i class="bi bi-github"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -77,16 +80,42 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+  <section id="hero" class="hero section dark-background">
+    <img id="hero-mobile-image"
+        src="assets/img/my-profile-img7.jpeg"
+        alt="Boris SAMNE"
+        data-aos="fade-in">
 
-      <img src="assets/img/my-profile-img.png" alt="A picture of me" data-aos="fade-in" class="">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <h2>Boris SAMNE</h2>
+      <p>
+        I'm
+        <span class="typed"
+          data-typed-items="a GIS Engineer, a Full-Stack Developer, a Geospatial Analyst, a Freelancer">
+          a GIS Engineer
+        </span>
+      </p>
+    </div>
+  </section>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Boris SAMNE</h2>
-        <p>I'm <span class="typed" data-typed-items="a GIS Engineer, a Full-Stack Developer, a Geospatial Analyst, a Freelancer">a GIS Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
+  <section id="hero" class="hero section dark-background">
+    <img id="hero-mobile-image"
+        src="assets/img/my-profile-img3.jpeg"
+        alt="Boris SAMNE"
+        data-aos="fade-in">
 
-    </section><!-- /Hero Section -->
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <h2>Engineer in</h2>
+
+      <ul class="hero-list">
+        <li>Geomatics</li>
+        <li>Urban Planning</li>
+        <li>Databases & Full-Stack Development</li>
+      </ul>
+
+    </div>
+  </section>
+    <!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -111,17 +140,17 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 2003</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.boris-samne.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age-value"></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Linkedin:</strong> <span>www.linkedin.com/in/borissamne/</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+212 674 48 21 92</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tangier, Morocco</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Paris, France | Tangier, Morocco</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Geoinformation Engineering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>borissamne5@gmail.com</span></li>
+
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Geomatics Engineer</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>boris.samne@eivp-paris.fr</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
@@ -162,7 +191,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="3" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1800" data-purecounter-duration="3" class="purecounter"></span>
               <p><strong>Hours of Fieldwork</strong> <span>in GIS and data full stack development</span></p>
             </div>
           </div><!-- End Stats Item -->
@@ -270,15 +299,22 @@
               <h4>Boris SAMNE</h4>
               <p><em>Dynamic and innovative GIS Engineer with a passion for developing cutting-edge geospatial solutions. Experienced in full-stack development, 3D modeling, and spatial data analysis to drive digital transformation and optimize management.</em></p>
               <ul>
-                <li>Tangier, Morocco</li>
+                <li>Paris, France | Tangier, Morocco</li>
+                <li>boris.samne@eivp-paris.fr</li>
                 <li>+212 674 48 21 92</li>
-                <li>borissamne5@gmail.com</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
-            <h3 class="resume-title">Education</h3>
+          <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Geoinformation Engineering</h4>
+              <h4>Engineering Degree Apprenticeship in Urban Planning</h4>
+              <h5>2026 – 2028</h5>
+              <p><em>EIVP Paris, France</em></p>
+              <p>Specialized curriculum in urban planning, spatial analysis, and sustainable urban development.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Geomatics engineer</h4>
               <h5>2023 – Present</h5>
               <p><em>FST Tangier, Morocco</em></p>
               <p>Specialized curriculum in Geographic Information Systems, spatial analysis, web mapping, and full-stack development of geospatial applications.</p>
@@ -286,48 +322,25 @@
 
             <div class="resume-item">
               <h4>University Diploma of Technology in Computer Engineering</h4>
-              <h5>2021 – 2023</h5>
+              <h5>2021 – 2026</h5>
               <p><em>EST Dakhla, Morocco</em></p>
               <p>Intensive program in software development, database management, and web technologies.</p>
             </div><!-- Edn Resume Item -->
 
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
+
             <div class="resume-item">
-              <h4>GIS Engineer Intern</h4>
-              <h5>July – Sep 2025</h5>
-              <p><em>ETAFAT, Casablanca, Morocco</em></p>
+              <h4>GIS ENGINEER & GIS APPLICATION DEVELOPER |GIS4DS</h4>
+              <h5>Rabat, Morocco | Feb. 2026 – Present</h5>
               <ul>
-                <li>Integrated a CityDB database (PostgreSQL) using Docker.</li>
-                <li>Developed Python scripts for 3D modeling (CityGML).</li>
-                <li>Automated geospatial workflows.</li>
-                <li>Wrote technical documentation.</li>
+                <li>Designed and managed spatial databases using PostgreSQL/PostGIS, QGIS, and ArcGIS to support geospatial data integration and analysis.</li>
+                <li>Developed GIS applications, interactive dashboards, and decision-support mapping tools for territorial planning and monitoring.</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
-            <div class="resume-item">
-              <h4>GIS Engineer Intern</h4>
-              <h5>Aug – Sep 2024</h5>
-              <p><em>GENERAL IMMO, Ouagadougou, Burkina Faso</em></p>
-              <ul>
-                <li>Processed cadastral and geospatial data.</li>
-                <li>Updated GIS databases.</li>
-                <li>Produced maps and reports.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Full-Stack Developer</h4>
-              <h5>Apr – July 2023</h5>
-              <p><em>ADS, Dakhla, Morocco</em></p>
-              <ul>
-                <li>Developed a full-stack web application with Django.</li>
-                <li>Integrated APIs and designed interfaces.</li>
-                <li>Participated in agile sprints and documentation.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
           </div>
 
         </div>
@@ -1150,18 +1163,19 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-5">
+          <!--div class="col-lg-12"-->
 
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <!--div class="info-wrap"-->
+            <div class="row gy-4"></div>
+              <div class="info-item d-flex col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
-                  <p>Tangier, Morocco</p>
+                  <p>Paris, France | Tangier, Morocco</p>
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="info-item d-flex col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Me</h3>
@@ -1169,19 +1183,27 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="info-item d-flex col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Me</h3>
-                  <p>borissamne5@gmail.com</p>
+                  <p>boris.samne@eivp-paris.fr</p>
                 </div>
               </div><!-- End Info Item -->
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103595.41552992954!2d-5.915993942359855!3d35.76326498338332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b875cf04c132d%3A0x76bfc571bfb4e17a!2sTangier!5e0!3m2!1sen!2sma!4v1676961268712!5m2!1sen!2sma" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="info-item d-flex col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-linkedin"></i>
+                <div>
+                  <h3>Linked In</h3>
+                  <p><a href="https://www.linkedin.com/in/borissamne/" class="linkedin" target="_blank">www.linkedin.com/in/borissamne/</a></p>
+                </div>
+              </div><!-- End Info Item -->              
+
+              <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103595.41552992954!2d-5.915993942359855!3d35.76326498338332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b875cf04c132d%3A0x76bfc571bfb4e17a!2sTangier!5e0!3m2!1sen!2sma!4v1676961268712!5m2!1sen!2sma" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
             </div>
           </div>
 
-          <div class="col-lg-7">
+          <!--div class="col-lg-7">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
@@ -1215,7 +1237,7 @@
 
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div--><!-- End Contact Form -->
 
         </div>
 
@@ -1262,6 +1284,51 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (window.innerWidth < 1200) return;
+
+    const images = [
+        "assets/img/my-profile-img7.jpeg",
+        "assets/img/my-profile-img3.jpeg",
+        "assets/img/my-profile-img.jpg",
+        "assets/img/my-profile-img5.jpeg"
+    ];
+
+    const slots = [
+        document.getElementById("grid-img-1"),
+        document.getElementById("grid-img-2"),
+        document.getElementById("grid-img-3"),
+        document.getElementById("grid-img-4")
+    ];
+
+    let imageIndex = 0;
+    let slotIndex = 0;
+
+    setInterval(() => {
+
+        const currentSlot = slots[slotIndex];
+
+        currentSlot.classList.add("fade-out");
+
+        setTimeout(() => {
+
+            imageIndex = (imageIndex + 1) % images.length;
+
+            currentSlot.src = images[imageIndex];
+
+            currentSlot.classList.remove("fade-out");
+            currentSlot.classList.add("fade-in");
+
+        }, 600);
+
+        slotIndex = (slotIndex + 1) % slots.length;
+
+    }, 3000);
+
+});
+</script>
 
 </body>
 
