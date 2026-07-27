@@ -5,9 +5,10 @@
  * Ne jamais placer ici une clé "secret" ou "service_role".
  */
 window.PORTFOLIO_ACCESS_CONFIG = Object.freeze({
-  enabled: false,
-  supabaseUrl: "",
-  supabasePublishableKey: "",
+  enabled: true,
+  supabaseUrl: "https://stqyrrnrqelvyloesylj.supabase.co",
+  supabasePublishableKey: "sb_publishable_cD73PFE6nY5ws_le8UGHTA_YdfpjhvJ",
+  authRedirectUrl: "https://boris-samne.github.io/gis_engineer_Boris_samne/",
   privacyPolicyUrl: "privacy.html",
   consentVersion: "2026-07-27",
   consentStorageKey: "boris-portfolio-personal-tracking-consent",

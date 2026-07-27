@@ -10,7 +10,9 @@ ne risque pas de devenir inaccessible par erreur.
 2. Ouvrir l'éditeur SQL du projet.
 3. Copier et exécuter le contenu de `supabase/setup.sql`.
 4. Dans les paramètres d'authentification, conserver l'authentification par e-mail.
-5. Ajouter l'URL publique exacte du portfolio dans les URL de redirection autorisées.
+5. Dans `Authentication > URL Configuration`, définir :
+   - `Site URL` : `https://boris-samne.github.io/gis_engineer_Boris_samne/`
+   - `Redirect URLs` : ajouter exactement la même adresse.
 
 ## 2. Relier le portfolio
 
@@ -18,6 +20,7 @@ Dans `assets/js/visitor-access-config.js` :
 
 - renseigner `supabaseUrl` avec l'URL du projet ;
 - renseigner `supabasePublishableKey` avec la clé publique/publishable ;
+- renseigner `authRedirectUrl` avec l'adresse publique exacte du portfolio ;
 - passer `enabled` de `false` à `true`.
 
 Ne jamais placer une clé `secret` ou `service_role` dans le portfolio.

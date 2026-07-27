@@ -140,7 +140,7 @@
       savePendingProfile(values);
       await ensureSupabase();
 
-      const redirectUrl = cleanCurrentUrl();
+      const redirectUrl = config.authRedirectUrl || cleanCurrentUrl();
       const result = await dbClient.auth.signInWithOtp({
         email: values.email,
         options: { emailRedirectTo: redirectUrl }
